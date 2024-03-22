@@ -1,0 +1,2476 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+header {
+    background-color: #3A4D39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 70%;
+    margin: 0px 20px;
+}
+
+.busqueda {
+    display: flex;
+    margin-top: 10px;
+}
+
+.busqueda input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 15px;
+}
+
+.busqueda button[type="submit"] {
+    border-radius: 10px;
+    border: 0.5px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+
+.nav-links {
+    margin-right: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    background-color: transparent;
+    color: #14f309;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*---------PAGINA PPAL---------------------*/
+
+.welcome-section {
+    background: url(../assets/img/presentacion.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.welcome-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-125%, -80%);
+    padding: 20px;
+    text-align: left;
+}
+
+.Bienvenido {
+    text-align: center;
+    font-size: 50px;
+}
+
+.welcome-content h2 {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-content p {
+    text-align: justify;
+    font-size: 22px;
+    color: white;
+}
+
+.comentarios-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECE3CE;
+    margin: 5px 0;
+    padding: 20px;
+}
+
+.comentarios-section h3 {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.comentarios-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.comentarios {
+    margin: 0 80px;
+}
+
+.comentarios img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+/*----------CATALOGO PRODUCTOS--------------*/
+.catalogo{
+    background-color: #ECE3CE;
+}
+
+.carrito-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.carrito-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.carrito-container img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.carrito-container a:hover {
+    background-color: transparent;
+    color: #14f309;
+}
+
+.categoria-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+}
+
+.categoria-busqueda {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+
+}
+
+.categoria-busqueda li{
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el margen entre los elementos de la lista */
+}
+
+.categoria-busqueda a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.categoria-busqueda a:hover {
+    background-color: transparent; /* Establece el fondo transparente */
+    color: #14f309; /* Cambia el color del texto al verde claro */
+}
+
+.marcas-section{
+    background-color:white;
+    margin:10px;   
+}
+.marcas-name h2{
+    font-size: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10px;
+}
+.marcas-img{
+    display: flex;
+    justify-content: center;
+ 
+}
+.marcas-img img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    margin: 15px;
+    padding: 25px;
+}
+.marcas-img img:hover {
+    background-color: transparent;
+    background-color: #739072; /* Color de fondo cuando se pasa el cursor sobre el botón */
+}
+.productos {
+    display: flex;
+    justify-content: space-between; /* Para que las imágenes estén en los extremos */
+    align-items: center; /* Para alinear verticalmente las imágenes */
+}
+
+.productos-img {
+    display: flex;
+    flex-wrap: wrap; /* Para que las imágenes se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+.productos-img div {
+    width: 200px; /* Ajustar el ancho para que coincida con el de las imágenes */
+    text-align: center; /* Centra el texto */
+    margin: 20px; /* Ajusta el espacio entre los elementos */
+}
+
+.productos-img img {
+    width: 150px;
+    height: auto;
+    margin: 35px;
+    padding: 25px;
+}
+
+.productos-img p {
+    font-size: 15px;
+    text-align: center;
+    width: 200px; /* Ajustar el ancho para que coincida con el de las imágenes */
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.productos-img button {
+    margin-top: 5px; /* Espacio vertical encima del botón */
+    padding: 5px;
+    width: auto;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.agregar-carrito {
+    padding: 5px 10px; /* Ajusta el padding según sea necesario */
+    background-color: #3A4D39; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    font-size: 14px; /* Tamaño de letra deseado */
+    margin-top: 5px; /* Espacio vertical encima del botón */
+    margin-bottom: 15px; /* Espacio vertical debajo del botón */
+}
+.agregar-carrito:hover {
+    background-color: #14f309; /* Color de fondo cuando se pasa el cursor sobre el botón */
+}
+
+
+/*----------INICIO SESION--------------*/
+.main-inicio {
+    background: url(../assets/img/iniciosesion.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Centra verticalmente */
+}
+
+.login-container {
+    width: 300px; /* Ancho del contenedor */
+    padding: 20px;
+    border: 3px solid #3A4D39; /* Borde sólido */
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco */
+    margin-right: 20px; /* Espacio entre el contenedor y el borde derecho */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3A4D39;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;  
+}
+
+.login-options {
+    text-align: center;
+    margin-bottom: 10px;  
+}
+
+.login-options button {
+    background-color: rgb(173, 172, 172);
+    border-radius: 50px;
+    background-image: url('/assets/img/logoGo.png'); /* Cambia 'google_logo.png' por la ruta de tu imagen del logo de Google */
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Posición del logo */
+    padding-left: 40px; /* Ajustar espacio para el logo */
+}
+
+.forgot-password {
+    font-size: 12px;
+    text-align: center;   
+}
+/*-----------------Carrito-----------------------*/
+.carrito-main {
+    background-color: #ECE3CE;
+    display: grid; /* Usar grid */
+    grid-template-columns: 60% 40%; /* Definir dos columnas, una con el 60% y otra con el 40% del ancho */
+    gap: 20px; /* Agregar espacio entre las columnas */
+}
+.detalle-producto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    border: 2px solid #3A4D39;
+    margin: 10px;
+}
+
+.detalle-producto,
+.detalle-envio {
+    grid-column: 1; /* Ocupa la primera columna y se extiende a una columna más */
+}
+.columna1, .columna2, .columna3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.columna1 img {
+    width: 50px;
+    margin-top: 20px;
+}
+.cantidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.botones-cantidad {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.botones-cantidad button {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.quitar {
+    text-align: center;
+    font-size: 14px;
+}
+.columna2 {
+    margin-left: auto;
+}
+.columna3 {
+    text-align: center;
+}
+.columna3 p {
+    margin-top: 40px;
+}
+.aside-total {
+    grid-column: 2 / span 1; /* Ocupa la segunda columna y se extiende a una columna más */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #3A4D39;
+    margin: 10px;
+    margin-right: 30px;
+}
+.titulo-aside {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.titulo-aside h3 {
+    margin-right: 50px;
+}
+
+.titulo-aside p {
+    margin-left: 50px;
+}
+
+.opciones-aside {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.envio, .retiro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border: 1px solid #3A4D39;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.envio img, .retiro img {
+    width: 50px;
+    margin-right: 10px;
+}
+.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: flex-end;
+}
+.botones-aside input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.envio input[type="checkbox"], .retiro input[type="checkbox"] {
+    margin-left: 10px;
+}
+.botones-aside button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3A4D39;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.botones-aside button:hover {
+    background-color: #45a049;
+}
+.detalle-envio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border: 2px solid #3A4D39;
+    margin: 10px;
+}
+.envio-gratis, .local, .tarjeta {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.columna4, .columna5, .columna6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+.columna4 img, .columna5 img, .columna6 img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.columna4 h3, .columna5 h3, .columna6 h3 {
+    font-size: 18px;
+    white-space: nowrap;
+}
+.columna4 p, .columna5 p, .columna6 p {
+    font-size: 15px;
+    margin: 10px 0 15px 0px;
+    text-align: center;
+    color: #2a8825;
+}
+/*------------CONFIRMAR COMPRA--------------*/
+.cliente-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-left: 60px; /* Mueve el contenedor hacia el lado derecho */
+    margin-top: 10px;
+}
+
+.cliente-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.cliente-container img {
+    width: 20px; /* Tamaño del icono del carrito */
+    height: auto;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.informacion-entrega {
+    background-color: #ECE3CE;
+}
+
+.contenedor-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los section en la parte superior */
+    margin-top: 20px; /* Espacio entre las secciones y otros elementos */
+    border: 2px solid #3A4D39;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-group textarea {
+    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+}
+
+.metodos-pago {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.metodos-pago h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.marco {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 20px;
+    border: 2px solid #3A4D39;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.marco input[type="radio"] {
+    margin-right: 10px; /* Espacio entre el checkbox y el contenido */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.marco label {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.marco img {
+    width: auto;
+    height: 30px;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.marco .contenido-marco {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.contenido-marco .descripcion h3 {
+    font-size: 25px; /* Tamaño de fuente deseado */
+}
+
+.contenido-marco .descripcion p {
+    font-size: 18px; /* Tamaño de fuente deseado */
+    color: #2a8825;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el botón */
+    margin-top: 20px; /* Espacio entre los section y el botón */
+}
+
+.pagar-ahora {
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    background-color: #3A4D39; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.pagar-ahora:hover {
+    background-color: #14f309; /* Color de fondo cuando se pasa el cursor sobre el botón */
+}
+
+/*-------------------------FOOTER------------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F6F52;
+    color: #fff;
+    padding: 10px;   
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    max-width: 33%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left img {
+    width: 120px;
+    border-radius: 60%;
+    margin: 30px 0 0 40px;
+}
+
+.footer-left .sub-huellitas p {
+    font-family: 'Life Savers', sans-serif;
+    color: #fff;
+    font-size: 20px; /* Cambiado el tamaño de fuente */
+    margin-left: 65px;
+    margin-top: 0;
+}
+
+.footer-left p {
+    font-size: 12px; /* Reducimos el tamaño de la fuente */
+    margin-top: 30px;
+}   
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al comienzo del eje transversal */
+    margin-top: 15px;
+    flex: 1;
+}
+
+.ubicacion,
+.contacto,
+.correo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Margen inferior uniforme */
+    height: 50px; /* Altura fija para los elementos */
+}
+
+.footer-icon {
+    display: flex;
+    align-items: end;
+}
+
+.footer-icon img {
+    width: 25px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.contacto-title {
+    font-size: 18px; /* Tamaño de fuente para "Location" */
+}
+
+.contacto-details {
+    font-size: 14px; /* Tamaño de fuente para "PetShop 173" */
+}
+
+.footer-message {
+    border: 3px solid #3A4D39;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.footer-message a {
+    text-decoration: underline;
+}
+
+.icons {
+    margin-top: 60px;
+}
+
+.icons img {
+    width: 25px; /* Ajusta el tamaño de los íconos */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+/*-------------------MEDIAQ----------------*/
+
+@media(max-width:1400px){
+    /*-------------PRESENTACION---------------------*/
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-115%, -80%);
+        padding: 20px;
+        text-align: right;
+    }
+    .welcome-section {
+        background: url(../assets/img/presentacion.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 100vh;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 40px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 22px;
+        color: white;
+    }
+    .comentarios img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+/*------------------CATALOGO------------------*/
+
+/*-------------------------INICIOSESION----------------------*/
+   .login-container {
+    width: 250px; /* Reducido el ancho para dispositivos móviles */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.input-group input {
+    font-size: 12px;
+}
+.input-group label{
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    font-size: 12px;
+    background-color: #3A4D39;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*-------------FOOTER------------------*/
+
+    .footer-left img {
+        width: 100px;
+        border-radius: 60%;
+        margin: 20px 0 0 30px;
+    }
+    .footer-left .sub-huellitas p {
+        font-family: 'Life Savers', sans-serif;
+        color: #fff;
+        font-size: 20px; /* Cambiado el tamaño de fuente */
+        margin-left: 48px;
+        margin-top: 0;
+    }
+    .contacto-title {
+        font-size: 15px; /* Tamaño de fuente para "Location" */
+    }
+    .contacto-details {
+        font-size: 12px; /* Tamaño de fuente para "PetShop 173" */
+    }
+    .icons img {
+        width: 20px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+}
+@media(max-width:1290px){
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, -80%);
+        padding: 20px;
+        text-align: right;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 30px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+}
+
+
+@media(max-width:1024px){
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-108%, -80%);
+        padding: 20px;
+        text-align: right;
+
+    .welcome-section {
+        background: url(../assets/img/presentacion.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 100vh;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 30px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 14px;
+    }
+    .comentarios img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+/*------------------CATALOGO------------------*/
+
+.carrito-container a {
+    font-size: 12px; /* Reducido el tamaño de fuente */
+}
+
+.carrito-container img {
+    width: 15px; /* Reducido el tamaño de la imagen */
+    height: auto;
+    margin-right: 3px; /* Reducido el margen derecho */
+}
+.categoria-busqueda li{
+    font-size: 12px; /* Reducido el tamaño de fuente */
+}
+
+.categoria-busqueda a{
+    font-size: 12px; /* Reducido el tamaño de fuente */
+}
+.marcas-name h2{
+    font-size: 20px; /* Reducido el tamaño de fuente */
+    margin-top: 15px; /* Ajustado el margen superior */
+    margin-left: 5px; /* Ajustado el margen izquierdo */
+}
+.marcas-img{
+    display: flex;
+    justify-content: center;
+}
+.marcas-img img{
+    width: 150px; /* Reducido el tamaño de la imagen */
+    height: auto;
+    margin: 0px;
+    padding: 10px; /* Reducido el padding */
+}
+.productos-img div {
+    margin: 10px; /* Ajusta el espacio entre los elementos */
+}
+
+.productos-img img {
+    width: 100px; /* Reducido el ancho de la imagen */
+    margin: 20px; /* Aumentado el margen */
+    padding: 10px; /* Reducido el padding */
+}
+.productos-img p {
+    font-size: 12px; /* Reducido el tamaño de fuente */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px; /* Reducido el margen inferior */
+}
+
+/*-------------------------INICIOSESION----------------------*/
+   .login-container {
+    width: 250px; /* Reducido el ancho para dispositivos móviles */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.input-group input {
+    font-size: 12px;
+}
+.input-group label{
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    font-size: 12px;
+    background-color: #3A4D39;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*--------------------CARRITO-------------*/
+    .carrito-main {
+        display: grid;
+        grid-template-columns: 1fr; /* Solo una columna para dispositivos de 320px */
+        gap: 10px;
+    
+    }
+    .detalle-producto,
+    .detalle-envio {
+        grid-column: 1;
+    }
+    .aside-total {
+        grid-column: 1; /* Ocupa toda la fila en dispositivos de 320px */
+        padding: 10px; /* Reducido el padding para dispositivos pequeños */
+        margin: 10px 5px 5px 5px; /* Reducido el margen vertical */
+    }
+
+    .titulo-aside,
+    .opciones-aside {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para dispositivos pequeños */
+        gap: 10px;
+        font-size: 15px;
+    }
+    .envio,
+    .retiro {
+        display: flex;
+        align-items: center;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .botones-cantidad button {
+        font-size: 10px;
+    }
+    .botones-aside input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botones-aside button {
+        width: 100%;
+        padding: 8px;
+    }
+    .detalle-envio,
+    .detalle-producto {
+        margin: 10px 5px 5px 5px;
+    }
+    .columna2{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5,
+    .columna6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columna1 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+    .columna1 h3, p{
+        font-size: 15px;
+    }
+    .columna3  {
+        margin-top: 20px; /* Aumentado el espacio superior para dispositivos pequeños */
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .columna4 img,
+    .columna5 img,
+    .columna6 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+/*-----------------CONFIRMAR-COMPRA-----*/
+
+/*-------------FOOTER------------------*/
+
+    .footer-left img {
+        width: 100px;
+        border-radius: 60%;
+        margin: 20px 0 0 30px;
+    }
+    .footer-left .sub-huellitas p {
+        font-family: 'Life Savers', sans-serif;
+        color: #fff;
+        font-size: 20px; /* Cambiado el tamaño de fuente */
+        margin-left: 48px;
+        margin-top: 0;
+    }
+    .contacto-title {
+        font-size: 15px; /* Tamaño de fuente para "Location" */
+    }
+    .contacto-details {
+        font-size: 12px; /* Tamaño de fuente para "PetShop 173" */
+    }
+    .icons img {
+        width: 20px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+}
+
+@media(max-width:880px){
+
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .busqueda {
+        margin-top: 5x;
+        margin-right: 5px;
+    }
+    .busqueda input[type="text"] {
+        width: 100px;
+        height: 17px;
+        font-size: 10px;
+        margin-top: 8px;
+        padding: 2px;
+    }
+    .busqueda button[type="submit"] {
+        margin-left: 20px;
+        font-size: 10px; /* Reducir el tamaño de la fuente */
+        padding: 2px 2px; /* Reducir el relleno horizontal y vertical */
+        margin-top: 8px;
+        margin-right: 3px;
+    }
+    .nav-links {
+        margin-right: 5px;
+    }
+    .nav-links li {
+        display: inline-block;
+        margin-left: 12px;
+        font-size: 8px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 9px;
+    }
+    .welcome-section {
+        background-position: 60% 50%;
+        position: relative;
+        min-height: 100vh;
+    }
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -80%);
+        padding: 20px;
+        text-align: left;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 30px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 15px;
+        color: white;
+    }
+    .comentarios-section h3 {
+        text-align: left;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .comentarios-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }   
+    .comentarios {
+        margin: 0 10px;
+    }
+    .comentarios img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+/*---------CATALOGO-----------*/
+    .carrito-container a {
+        font-size: 10px;
+    }
+    .carrito-container img {
+        width: 13px;
+        margin-right: 4px;
+    }
+    .categoria-busqueda a{
+        font-size: 7px;
+    }
+    .marcas-name h2{
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .marcas-img img{
+        width: 80px;
+        height: auto;
+        margin: 0px;
+        padding: 5px;
+    }
+    .productos-img img {
+        width: 80px;
+        height: auto;
+        margin: 3px;
+        padding: 3px;
+    }
+    .productos-img p {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+    .productos-img button {
+        margin-top: 3px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .agregar-carrito {
+        padding: 5px;
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+ /*-----------login-----------*/
+    .login-container {
+        width: 250px; /* Reducido el ancho para dispositivos móviles */
+        padding: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .input-group input {
+        font-size: 12px;
+    }
+    .input-group label{
+        font-size: 15px;
+    }
+    button {
+        width: 100%;
+        padding: 7px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-left img {
+        width: 80px;
+        border-radius: 60%;
+        margin: 20px 0 0 30px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 40px;
+        margin-top: 0;
+    }
+    .footer-message {
+        font-size: 15px;
+    }
+    .contacto-title {
+        font-size: 12px; /* Tamaño de fuente para "Location" */
+    }
+    
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+
+    .icons img {
+        width: 15px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    
+    .footer-center img{
+        width: 20px;
+    }
+/*-----------------CARRITO------------------------*/
+    .carrito-main {
+        display: grid;
+        grid-template-columns: 1fr; /* Solo una columna para dispositivos de 320px */
+        gap: 10px;
+       
+    }
+    .detalle-producto,
+    .detalle-envio {
+        grid-column: 1;
+    }
+    .aside-total {
+        grid-column: 1; /* Ocupa toda la fila en dispositivos de 320px */
+        padding: 10px; /* Reducido el padding para dispositivos pequeños */
+        margin: 10px 5px 5px 5px; /* Reducido el margen vertical */
+    }
+
+    .titulo-aside,
+    .opciones-aside {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para dispositivos pequeños */
+        gap: 10px;
+        font-size: 15px;
+    }
+    .envio,
+    .retiro {
+        display: flex;
+        align-items: center;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .botones-cantidad button {
+        font-size: 10px;
+    }
+    .botones-aside input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botones-aside button {
+        width: 100%;
+        padding: 8px;
+    }
+    .detalle-envio,
+    .detalle-producto {
+        margin: 10px 5px 5px 5px;
+    }
+    .columna2{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5,
+    .columna6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columna1 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+    .columna1 h3, p{
+        font-size: 15px;
+    }
+    .columna3  {
+        margin-top: 20px; /* Aumentado el espacio superior para dispositivos pequeños */
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .columna4 img,
+    .columna5 img,
+    .columna6 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+
+/*-----------------CONFIRMAR-COMPRA---------------*/
+    .cliente-container {
+        display: flex;
+        margin-left: 20px; /* Reducido el margen izquierdo */
+        margin-top: 10px;
+    }
+    .cliente-container img {
+        width: 15px; /* Reducido el tamaño del icono del carrito */
+        margin-right: 3px; /* Reducido el espacio entre el ícono y el texto */
+    }
+    .contenedor-section {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        margin-top: 10px; /* Reducido el espacio superior */
+        margin: 10px;
+        padding: 10px;
+    }
+    .formulario,
+    .metodos-pago {
+        width: 100%; /* Cambiado el ancho al 100% para ocupar toda la pantalla */
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .formulario h2,
+    .metodos-pago h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .input-group {
+        margin-bottom: 10px; /* Reducido el espacio entre los grupos de entrada */
+    }
+    .input-group label {
+        margin-bottom: 3px; /* Reducido el espacio entre las etiquetas y los campos de entrada */
+    }
+    .input-group input,
+    .input-group textarea {
+        padding: 8px;
+    }
+    .marco {
+        margin-bottom: 10px; /* Reducido el espacio entre los marcos */
+        padding: 10px;
+    }
+    .marco input[type="radio"] {
+        margin-right: 5px; /* Reducido el espacio entre el radio button y el contenido */
+    }
+    .marco img {
+        height: 20px; /* Reducido el tamaño de la imagen */
+        margin-right: 5px; /* Reducido el espacio entre la imagen y el texto */
+    }
+    .contenido-marco .descripcion h3 {
+        font-size: 12px; /* Reducido el tamaño de fuente */
+    }
+    .contenido-marco .descripcion p {
+        font-size: 8px; /* Reducido el tamaño de fuente */
+    }
+    .contenedor-botones {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pagar-ahora {
+        padding: 8px 16px; /* Ajustado el padding */
+        font-size: 14px; /* Reducido el tamaño de fuente */
+    }
+
+/*-----------------------FOOTER---------------*/
+    .footer-left img {
+        width: 70px;
+        border-radius: 60%;
+        margin: 40px 0 0 5px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .footer-left p{
+        font-size: 8px;
+        margin-top: 100px;
+    }
+    .footer-message {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .contacto-title {
+        font-size: 13px; /* Tamaño de fuente para "Location" */
+    }
+
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+    .icons img {
+        width: 18px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    .footer-center img{
+        width: 25px;
+    }
+}   
+
+
+}
+@media(max-width:650px){
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .busqueda {
+        margin-top: 5x;
+        margin-right: 5px;
+    }
+    .busqueda input[type="text"] {
+        width: 100px;
+        height: 17px;
+        font-size: 10px;
+        margin-top: 8px;
+        padding: 2px;
+    }
+    .busqueda button[type="submit"] {
+        margin-left: 20px;
+        font-size: 10px; /* Reducir el tamaño de la fuente */
+        padding: 2px 2px; /* Reducir el relleno horizontal y vertical */
+        margin-top: 8px;
+        margin-right: 3px;
+    }
+    .nav-links {
+        margin-right: 5px;
+    }
+    .nav-links li {
+        display: inline-block;
+        margin-left: 12px;
+        font-size: 8px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 9px;
+    }
+    .welcome-section {
+        background-position: 60% 50%;
+        position: relative;
+        min-height: 100vh;
+    }
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -80%);
+        padding: 20px;
+        text-align: left;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 30px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 15px;
+        color: white;
+    }
+    .comentarios-section h3 {
+        text-align: left;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .comentarios-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }   
+    .comentarios {
+        margin: 0 10px;
+    }
+    .comentarios img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+/*---------CATALOGO-----------*/
+    .carrito-container a {
+        font-size: 10px;
+    }
+    .carrito-container img {
+        width: 13px;
+        margin-right: 4px;
+    }
+    .categoria-busqueda a{
+        font-size: 7px;
+    }
+    .marcas-name h2{
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .marcas-img img{
+        width: 80px;
+        height: auto;
+        margin: 0px;
+        padding: 5px;
+    }
+    .productos-img img {
+        width: 80px;
+        height: auto;
+        margin: 3px;
+        padding: 3px;
+    }
+    .productos-img p {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+    .productos-img button {
+        margin-top: 3px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .agregar-carrito {
+        padding: 5px;
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+ /*-----------login-----------*/
+    .login-container {
+        width: 250px; /* Reducido el ancho para dispositivos móviles */
+        padding: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .input-group input {
+        font-size: 12px;
+    }
+    .input-group label{
+        font-size: 15px;
+    }
+    button {
+        width: 100%;
+        padding: 7px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-left img {
+        width: 80px;
+        border-radius: 60%;
+        margin: 20px 0 0 30px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 40px;
+        margin-top: 0;
+    }
+    .footer-message {
+        font-size: 15px;
+    }
+    .contacto-title {
+        font-size: 12px; /* Tamaño de fuente para "Location" */
+    }
+    
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+
+    .icons img {
+        width: 15px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    
+    .footer-center img{
+        width: 20px;
+    }
+/*-----------------CARRITO------------------------*/
+    .carrito-main {
+        display: grid;
+        grid-template-columns: 1fr; /* Solo una columna para dispositivos de 320px */
+        gap: 10px;
+       
+    }
+    .detalle-producto,
+    .detalle-envio {
+        grid-column: 1;
+    }
+    .aside-total {
+        grid-column: 1; /* Ocupa toda la fila en dispositivos de 320px */
+        padding: 10px; /* Reducido el padding para dispositivos pequeños */
+        margin: 10px 5px 5px 5px; /* Reducido el margen vertical */
+    }
+
+    .titulo-aside,
+    .opciones-aside {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para dispositivos pequeños */
+        gap: 10px;
+        font-size: 15px;
+    }
+    .envio,
+    .retiro {
+        display: flex;
+        align-items: center;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .botones-cantidad button {
+        font-size: 10px;
+    }
+    .botones-aside input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botones-aside button {
+        width: 100%;
+        padding: 8px;
+    }
+    .detalle-envio,
+    .detalle-producto {
+        margin: 10px 5px 5px 5px;
+    }
+    .columna2{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5,
+    .columna6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columna1 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+    .columna1 h3, p{
+        font-size: 15px;
+    }
+    .columna3  {
+        margin-top: 20px; /* Aumentado el espacio superior para dispositivos pequeños */
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .columna4 img,
+    .columna5 img,
+    .columna6 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+
+/*-----------------CONFIRMAR-COMPRA---------------*/
+    .cliente-container {
+        display: flex;
+        margin-left: 20px; /* Reducido el margen izquierdo */
+        margin-top: 10px;
+    }
+    .cliente-container img {
+        width: 15px; /* Reducido el tamaño del icono del carrito */
+        margin-right: 3px; /* Reducido el espacio entre el ícono y el texto */
+    }
+    .contenedor-section {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        margin-top: 10px; /* Reducido el espacio superior */
+        margin: 10px;
+        padding: 10px;
+    }
+    .formulario,
+    .metodos-pago {
+        width: 100%; /* Cambiado el ancho al 100% para ocupar toda la pantalla */
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .formulario h2,
+    .metodos-pago h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .input-group {
+        margin-bottom: 10px; /* Reducido el espacio entre los grupos de entrada */
+    }
+    .input-group label {
+        margin-bottom: 3px; /* Reducido el espacio entre las etiquetas y los campos de entrada */
+    }
+    .input-group input,
+    .input-group textarea {
+        padding: 8px;
+    }
+    .marco {
+        margin-bottom: 10px; /* Reducido el espacio entre los marcos */
+        padding: 10px;
+    }
+    .marco input[type="radio"] {
+        margin-right: 5px; /* Reducido el espacio entre el radio button y el contenido */
+    }
+    .marco img {
+        height: 20px; /* Reducido el tamaño de la imagen */
+        margin-right: 5px; /* Reducido el espacio entre la imagen y el texto */
+    }
+    .contenido-marco .descripcion h3 {
+        font-size: 12px; /* Reducido el tamaño de fuente */
+    }
+    .contenido-marco .descripcion p {
+        font-size: 8px; /* Reducido el tamaño de fuente */
+    }
+    .contenedor-botones {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pagar-ahora {
+        padding: 8px 16px; /* Ajustado el padding */
+        font-size: 14px; /* Reducido el tamaño de fuente */
+    }
+
+/*-----------------------FOOTER---------------*/
+    .footer-left img {
+        width: 70px;
+        border-radius: 60%;
+        margin: 40px 0 0 5px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .footer-left p{
+        font-size: 8px;
+        margin-top: 100px;
+    }
+    .footer-message {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .contacto-title {
+        font-size: 13px; /* Tamaño de fuente para "Location" */
+    }
+
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+    .icons img {
+        width: 18px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    .footer-center img{
+        width: 25px;
+    }
+}   
+@media(max-width:425px){
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .busqueda {
+        margin-top: 5x;
+        margin-right: 5px;
+    }
+    .busqueda input[type="text"] {
+        width: 100px;
+        height: 17px;
+        font-size: 10px;
+        margin-top: 8px;
+        padding: 2px;
+    }
+    .busqueda button[type="submit"] {
+        margin-left: 20px;
+        font-size: 10px; /* Reducir el tamaño de la fuente */
+        padding: 2px 2px; /* Reducir el relleno horizontal y vertical */
+        margin-top: 8px;
+        margin-right: 3px;
+    }
+    .nav-links {
+        margin-right: 5px;
+    }
+    .nav-links li {
+        display: inline-block;
+        margin-left: 12px;
+        font-size: 8px;
+    }
+    .nav-links a {
+        font-size: 9px;
+    }
+    .welcome-section {
+        background-position: 60% 50%;
+        position: relative;
+        min-height: 100vh;
+    }
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -80%);
+        padding: 20px;
+        text-align: left;
+    }
+    .Bienvenido{
+        text-align: right;
+        font-size: 30px;
+    }
+    .welcome-content p {
+        text-align: justify;
+        font-size: 15px;
+    }
+    .comentarios-section h3 {
+        text-align: left;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .comentarios-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }   
+    .comentarios {
+        margin: 0 10px;
+    }
+    .comentarios img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+/*---------CATALOGO-----------*/
+    .carrito-container a {
+        font-size: 10px;
+    }
+    .carrito-container img {
+        width: 13px;
+        margin-right: 4px;
+    }
+    .categoria-busqueda a{
+        font-size: 7px;
+    }
+    .marcas-name h2{
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .marcas-img img{
+        width: 80px;
+        height: auto;
+        margin: 0px;
+        padding: 5px;
+    }
+    .productos-img img {
+        width: 80px;
+        height: auto;
+        margin: 3px;
+        padding: 3px;
+    }
+    .productos-img p {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+    .productos-img button {
+        margin-top: 3px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .agregar-carrito {
+        padding: 5px;
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+ /*-----------login-----------*/
+    .login-container {
+        width: 250px; /* Reducido el ancho para dispositivos móviles */
+        padding: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .input-group input {
+        font-size: 12px;
+    }
+    .input-group label{
+        font-size: 15px;
+    }
+    button {
+        width: 100%;
+        padding: 7px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-left img {
+        width: 80px;
+        border-radius: 60%;
+        margin: 20px 0 0 30px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 40px;
+        margin-top: 0;
+    }
+    .footer-message {
+        font-size: 15px;
+    }
+    .contacto-title {
+        font-size: 12px; /* Tamaño de fuente para "Location" */
+    }
+    
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+
+    .icons img {
+        width: 15px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    
+    .footer-center img{
+        width: 20px;
+    }
+/*-----------------CARRITO------------------------*/
+    .carrito-main {
+        display: grid;
+        grid-template-columns: 1fr; /* Solo una columna para dispositivos de 320px */
+        gap: 10px;
+       
+    }
+    .detalle-producto,
+    .detalle-envio {
+        grid-column: 1;
+    }
+    .aside-total {
+        grid-column: 1; /* Ocupa toda la fila en dispositivos de 320px */
+        padding: 10px; /* Reducido el padding para dispositivos pequeños */
+        margin: 10px 5px 5px 5px; /* Reducido el margen vertical */
+    }
+
+    .titulo-aside,
+    .opciones-aside {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para dispositivos pequeños */
+        gap: 10px;
+        font-size: 15px;
+    }
+    .envio,
+    .retiro {
+        display: flex;
+        align-items: center;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .botones-cantidad button {
+        font-size: 10px;
+    }
+    .botones-aside input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botones-aside button {
+        width: 100%;
+        padding: 8px;
+    }
+    .detalle-envio,
+    .detalle-producto {
+        margin: 10px 5px 5px 5px;
+    }
+    .columna2{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5,
+    .columna6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columna1 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+    .columna1 h3, p{
+        font-size: 15px;
+    }
+    .columna3  {
+        margin-top: 20px; /* Aumentado el espacio superior para dispositivos pequeños */
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .columna4 img,
+    .columna5 img,
+    .columna6 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+
+/*-----------------CONFIRMAR-COMPRA---------------*/
+    .cliente-container {
+        display: flex;
+        margin-left: 20px; /* Reducido el margen izquierdo */
+        margin-top: 10px;
+    }
+    .cliente-container img {
+        width: 15px; /* Reducido el tamaño del icono del carrito */
+        margin-right: 3px; /* Reducido el espacio entre el ícono y el texto */
+    }
+    .contenedor-section {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        margin-top: 10px; /* Reducido el espacio superior */
+        margin: 10px;
+        padding: 10px;
+    }
+    .formulario,
+    .metodos-pago {
+        width: 100%; /* Cambiado el ancho al 100% para ocupar toda la pantalla */
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .formulario h2,
+    .metodos-pago h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .input-group {
+        margin-bottom: 10px; /* Reducido el espacio entre los grupos de entrada */
+    }
+    .input-group label {
+        margin-bottom: 3px; /* Reducido el espacio entre las etiquetas y los campos de entrada */
+    }
+    .input-group input,
+    .input-group textarea {
+        padding: 8px;
+    }
+    .marco {
+        margin-bottom: 10px; /* Reducido el espacio entre los marcos */
+        padding: 10px;
+    }
+    .marco input[type="radio"] {
+        margin-right: 5px; /* Reducido el espacio entre el radio button y el contenido */
+    }
+    .marco img {
+        height: 20px; /* Reducido el tamaño de la imagen */
+        margin-right: 5px; /* Reducido el espacio entre la imagen y el texto */
+    }
+    .contenido-marco .descripcion h3 {
+        font-size: 12px; /* Reducido el tamaño de fuente */
+    }
+    .contenido-marco .descripcion p {
+        font-size: 8px; /* Reducido el tamaño de fuente */
+    }
+    .contenedor-botones {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pagar-ahora {
+        padding: 8px 16px; /* Ajustado el padding */
+        font-size: 14px; /* Reducido el tamaño de fuente */
+    }
+
+/*-----------------------FOOTER---------------*/
+    .footer-left img {
+        width: 70px;
+        border-radius: 60%;
+        margin: 40px 0 0 5px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .footer-left p{
+        font-size: 8px;
+        margin-top: 100px;
+    }
+    .footer-message {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .contacto-title {
+        font-size: 13px; /* Tamaño de fuente para "Location" */
+    }
+
+    .contacto-details {
+        font-size: 10px; /* Tamaño de fuente para "PetShop 173" */
+    }
+    .icons img {
+        width: 18px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    .footer-center img{
+        width: 25px;
+    }
+}   
+
+
+@media(max-width:350px){
+
+    .logo img {
+        height: 40px;
+        margin-bottom: 5px;
+        margin-left: -10px;
+    }
+    .busqueda {
+        margin-bottom: 5px;
+        margin-left:-10px;
+    }
+    .busqueda input[type="text"] {
+        width: 65px;
+        height: 15px;
+        font-size: 10px;
+    }
+    .busqueda button[type="submit"] {
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 1px 2px;
+    }       
+    .nav-links li {
+        margin-left: 10px;
+    }
+    .nav-links a {
+        font-size: 7px;
+    }
+    .welcome-section {
+        background-position: 60% 50%;
+        position:relative;
+        min-height: 60vh;
+    }
+    .welcome-content {
+        transform: translate(-80%, -100%);
+        padding: 20px;
+        text-align: left;
+        width: 200px;
+    }
+    .Bienvenido{
+        font-size: 20px;
+    
+    }
+    .welcome-content p {
+        font-size: 10px;
+    }
+    .comentarios-section h3 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .comentarios img {
+        width: 90px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 5px; /* Reducir el margen derecho */
+        margin-left: -15px; /* Ajustar el margen izquierdo */
+    }
+/*---------CATALOGO-----------*/
+    .carrito-container {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .carrito-container a {
+        font-size: 9px;
+    }
+    .carrito-container img {
+        width: 10px;
+        margin-right: 2px;
+    }
+    .categoria-container {
+        margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+    }
+    .categoria-busqueda li{
+        margin-right: 1px; /* Ajusta el margen entre los elementos de la lista */
+    }
+    .categoria-busqueda a{
+        font-size: 6px;
+    }
+    .marcas-section{
+        margin:5px;   
+    }
+    .marcas-name h2{
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .marcas-img img{
+        width: 60px;
+        margin: 0px;
+        padding: 5px;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productos-img {
+        width: 50%;
+        text-align: center;
+        margin: 5px;
+    }
+    .productos-img img {
+        width: 50%;
+        height: auto;
+        margin: 3px;
+        padding: 3px;
+    }
+    .productos-img p {
+        font-size: 8px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+    .productos-img button {
+        margin-top: 3px;
+        padding: 2px;
+        font-size: 8px;
+    }
+    .agregar-carrito {
+        padding: 1px;
+        font-size: 6px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+/*-----------login-----------*/
+    .login-container {
+        width: 200px; /* Reducido el ancho para dispositivos móviles */
+        padding: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .input-group input {
+        font-size: 12px;
+    }
+    .input-group label{
+        font-size: 15px;
+    }
+    button {
+        width: 100%;
+        padding: 7px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+/*---------------CARRITO------------------*/
+    .carrito-main {
+        display: grid;
+        grid-template-columns: 1fr; /* Solo una columna para dispositivos de 320px */
+        gap: 10px;
+    }
+
+    .detalle-producto,
+    .detalle-envio {
+        grid-column: 1;
+    }
+
+    .aside-total {
+        grid-column: 1; /* Ocupa toda la fila en dispositivos de 320px */
+        padding: 10px; /* Reducido el padding para dispositivos pequeños */
+        margin: 10px 0; /* Reducido el margen vertical */
+    }
+
+    .titulo-aside,
+    .opciones-aside {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para dispositivos pequeños */
+        gap: 10px;
+        font-size: 15px;
+    }
+    .envio,
+    .retiro {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .botones-cantidad button {
+        font-size: 10px;
+    }
+    .botones-aside input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botones-aside button {
+        width: 100%;
+        padding: 8px;
+    }
+    .detalle-envio,
+    .detalle-producto {
+        margin: 10px 0;
+    }
+    .columna2{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5,
+    .columna6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columna1 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+    .columna1 h3, p{
+        font-size: 15px;
+    }
+    .columna3  {
+        margin-top: 20px; /* Aumentado el espacio superior para dispositivos pequeños */
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .columna4 img,
+    .columna5 img,
+    .columna6 img {
+        width: 40px; /* Reducido el tamaño de la imagen */
+    }
+/*---------------CONFIRMAR-COMPRA---------*/
+    .cliente-container {
+        display: flex;
+        margin-left: 20px; /* Reducido el margen izquierdo */
+        margin-top: 10px;
+    }
+    .cliente-container img {
+        width: 15px; /* Reducido el tamaño del icono del carrito */
+        margin-right: 3px; /* Reducido el espacio entre el ícono y el texto */
+    }
+    .contenedor-section {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para pantallas pequeñas */
+        margin-top: 10px; /* Reducido el espacio superior */
+        margin: 10px;
+        padding: 10px;
+    }
+    .formulario,
+    .metodos-pago {
+        width: 100%; /* Cambiado el ancho al 100% para ocupar toda la pantalla */
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .formulario h2,
+    .metodos-pago h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .input-group {
+        margin-bottom: 10px; /* Reducido el espacio entre los grupos de entrada */
+    }
+    .input-group label {
+        margin-bottom: 3px; /* Reducido el espacio entre las etiquetas y los campos de entrada */
+    }
+    .input-group input,
+    .input-group textarea {
+        padding: 8px;
+    }
+    .marco {
+        margin-bottom: 10px; /* Reducido el espacio entre los marcos */
+        padding: 10px;
+    }
+    .marco input[type="radio"] {
+        margin-right: 5px; /* Reducido el espacio entre el radio button y el contenido */
+    }
+    .marco img {
+        height: 20px; /* Reducido el tamaño de la imagen */
+        margin-right: 5px; /* Reducido el espacio entre la imagen y el texto */
+    }
+    .contenido-marco .descripcion h3 {
+        font-size: 12px; /* Reducido el tamaño de fuente */
+    }
+    .contenido-marco .descripcion p {
+        font-size: 8px; /* Reducido el tamaño de fuente */
+    }
+    .contenedor-botones {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pagar-ahora {
+        padding: 8px 16px; /* Ajustado el padding */
+        font-size: 14px; /* Reducido el tamaño de fuente */
+    }
+
+/*---------------FOOTER------------------*/
+    .footer-left img {
+        width: 70px;
+        border-radius: 60%;
+        margin: 40px 0 0 5px;
+    }
+    .footer-left .sub-huellitas p {
+        font-size: 15px; /* Cambiado el tamaño de fuente */
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .footer-left p{
+        font-size: 8px;
+        margin-top: 120px;
+    }
+    .footer-message {
+        font-size: 9px;
+        margin-right: 5px;
+    }
+    .contacto-title {
+        font-size: 10px; /* Tamaño de fuente para "Location" */
+    }
+    .contacto-details {
+        font-size: 8px; /* Tamaño de fuente para "PetShop 173" */
+    }
+
+    .icons img {
+        width: 12px; /* Ajusta el tamaño de los íconos */
+        margin-right: 10px; /* Espacio entre los íconos */
+    }
+    .footer-center img{
+        width: 18px;
+    }
+}
+
